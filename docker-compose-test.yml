@@ -7,7 +7,7 @@ services:
     ports:
       - 4567:5432
     env_file:
-      - ./back-end/.env.test
+      - .env.test
 
   node_drivenops_app:
     container_name: node_drivenops_app
@@ -17,4 +17,4 @@ services:
     depends_on:
       - postgres_drivenops_db
     env_file:
-      - ./back-end/.env.test
+      - .env.test
